@@ -62,4 +62,5 @@ local Button = CheatTab:CreateButton({
    Name = "Kill all players",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheatEngineRoblox/Cheat-Engine-Roblox-NEW/refs/heads/main/Kill%20all%20Script"))()
+   end,
 })
