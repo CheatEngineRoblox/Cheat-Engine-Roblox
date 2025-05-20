@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Cheat Engine Hub - By Liam",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Getting everything Reads",
+   LoadingTitle = "Getting everything Ready",
    LoadingSubtitle = "Scripted by Liam",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
@@ -62,5 +62,25 @@ local Button = CheatTab:CreateButton({
    Name = "Kill all players",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheatEngineRoblox/Cheat-Engine-Roblox-NEW/refs/heads/main/Kill%20all%20Script"))()
+   end,
+
+local Button = CheatTab:CreateButton({
+   Name = "Nameless Admin",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+   end,
+})
+
+local Section = CheatTab:CreateSection("Sliders")
+
+local Slider = CheatTab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {0, 300},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
