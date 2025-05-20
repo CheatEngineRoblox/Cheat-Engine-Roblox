@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Cheat Engine Hub - By Liam",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   Icon = 93147959004653, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Getting everything Ready",
    LoadingSubtitle = "Scripted by Liam",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
@@ -71,7 +71,7 @@ local Button = CheatTab:CreateButton({
    end,
 })
 
-local Section = CheatTab:CreateSection("Sliders")
+local CheatSection = CheatTab:CreateSection("Sliders")
 
 local Slider = CheatTab:CreateSlider({
    Name = "Walkspeed",
