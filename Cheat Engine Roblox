@@ -63,7 +63,7 @@ local Button = CheatTab:CreateButton({
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CheatEngineRoblox/Cheat-Engine-Roblox-NEW/refs/heads/main/Kill%20all%20Script"))()
    end,
-
+})
 local Button = CheatTab:CreateButton({
    Name = "Nameless Admin",
    Callback = function()
