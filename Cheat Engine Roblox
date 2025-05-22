@@ -86,3 +86,9 @@ local Slider = CheatTab:CreateSlider({
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
    end,
 })
+
+local PartnersTab = Window:CreateTab("Partners", nil) -- Title, Image
+local PartnersSection = PartnersTab:CreateSection("Rayfield")
+
+local Label = PartnersTab:CreateLabel("The Perfect Script UI", nil, Color3.fromRGB(40, 40, 255), true) -- Title, Icon, Color, IgnoreTheme
+local Label = PartnersTab:CreateLabel("Make your Own Script easy & fast", nil, Color3.fromRGB(40, 40, 255), true) -- Title, Icon, Color, IgnoreTheme
